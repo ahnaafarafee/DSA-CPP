@@ -46,15 +46,23 @@ void Print()
 
 int main()
 {
-    head = NULL; // empty list
+    head = NULL; // -> empty list
 
-    //--> number, postition
-    Insert(2, 1); // List: 2
-    Insert(3, 2); // List: 2, 3
-    Insert(4, 1); // List: 4, 2, 3
-    Insert(5, 2); // List: 4, 5, 2, 3
+    int n, x, p;
 
-    Print();
+    cout << "How many numbers: "
+         << " ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+    {
+        cout << "Enter the number and position: "
+             << " ";
+        cin >> x >> p;
+
+        Insert(x, p);
+        Print();
+    }
 
     return 0;
 }
