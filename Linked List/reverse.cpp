@@ -50,6 +50,7 @@ void Print(Node *head)
         cout << head->data << " ";
         head = head->next;
     }
+    cout << endl;
 };
 
 int main()
